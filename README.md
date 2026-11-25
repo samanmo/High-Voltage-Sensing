@@ -1,4 +1,4 @@
-# High-Voltage Sensing Circuit (STM32H503 & LoRa) | 高電圧センシング回路
+# High-Voltage Sensing Circuit (STM32H503) | 高電圧センシング回路 | Altium Designer
 
 [English](#english) | [日本語](#日本語)
 
@@ -14,6 +14,17 @@ A hardware design for a **High-Voltage (up to 15,000V / 15kV) and Current Sensin
 * **Max Input Voltage:** 15,000V (15kV)
 * **Sensing & Control:** High-voltage divider and current sensing (`Voltage_Sense.SchDoc`, `Current_Sense.SchDoc`), STM32H503 MCU (`MCU_Module.SchDoc`) with STDC14 debug interface, and 12-DIP LoRa module (`LoRaModule.SchDoc`).
 * **Power & Status:** Dedicated power regulation (`Power_Module.SchDoc`) and status LEDs (`LED_blink.SchDoc`).
+
+## Architecture & Repository Structure
+
+The project includes hierarchical schematic sheets for voltage sensing (`Voltage_Sense.SchDoc`), current sensing (`Current_Sense.SchDoc`), the STM32H503 core (`MCU_Module.SchDoc`), a LoRa wireless module (`LoRaModule.SchDoc`), and power management (`Power_Module.SchDoc`, `LED_blink.SchDoc`).
+
+```text
+├── 2027_09_15_RVM_EF_ver0.4.PrjPcb       # Main Altium Designer project file
+├── *.SchDoc / *.PcbDoc                   # Schematics & PCB layout files
+├── *.SchLib & *.PcbLib                   # Custom symbol & footprint libraries
+└── LICENSE                               # MIT License
+```
 
 ### Quick Start
 1. **Clone the repository:**
@@ -33,6 +44,17 @@ A hardware design for a **High-Voltage (up to 15,000V / 15kV) and Current Sensin
 ### 主な特徴
 * **最大入力電圧:** 15,000V (15kV)
 * **構成要素:** 高電圧・電流分圧回路 (`Voltage_Sense.SchDoc`, `Current_Sense.SchDoc`)、STM32H503マイコン (`MCU_Module.SchDoc` / STDC14インターフェース)、LoRa無線モジュール (`LoRaModule.SchDoc`)、および電源レギュレータ (`Power_Module.SchDoc`, `LED_blink.SchDoc`)。
+
+
+### アーキテクチャとリポジトリ構成
+
+本プロジェクトには、電圧センシング（Voltage_Sense.SchDoc）、電流センシング（Current_Sense.SchDoc）、STM32H503コア（MCU_Module.SchDoc）、LoRa無線モジュール（LoRaModule.SchDoc）、および電源管理（Power_Module.SchDoc、LED_blink.SchDoc）の階層型回路図シートが含まれています。
+```text
+├── 2027_09_15_RVM_EF_ver0.4.PrjPcb       # メインAltium Designerプロジェクトファイル
+├── *.SchDoc / *.PcbDoc                   # 回路図およびPCBレイアウトファイル
+├── *.SchLib & *.PcbLib                   # カスタムシンボルおよびフットプリントライブラリ
+└── LICENSE                               # MITライセンス
+```
 
 ### はじめに
 1. **リポジトリのクローン：**
