@@ -1,0 +1,22 @@
+# Altium Local History & Backups (excludes the 1.7GB History folder)
+History/
+__Previews/
+Project Logs for 2027_09_15_RVM_EF_ver0.3/
+Project Logs for 2027_09_15_RVM_EF_ver0.4/
+Project Outputs for 2027_09_15_RVM_EF_ver0.4/
+*.bak
+*.tmp
+*.Cam
+Project Outputs for 2027_09_15_RVM_EF_ver0.4.zip
+
+# Altium Log, Cache, and Lock files
+*.Log
+*.LOG
+*.ldb
+*.lck
+*.Dat
+*.PrjPcbStructure
+
+# Optional: Uncomment the lines below to exclude generated manufacturing outputs
+# Project Outputs for */
+
